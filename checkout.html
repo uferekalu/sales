@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Online Sales</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue">
+        <a class="navbar-brand" href="index.html">Online Sales</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="checkout.html">Checkout</a>
+                    <a class="dropdown-item" href="#">Products</a>
+                    <a class="dropdown-item" href="#">Blog</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <ul class="navbar-nav mr-2">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Register</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <main role="main">
+        <h2>Checkout Form</h2>
+        <div class="row">
+            <div class="col-75">
+                <div id="container" class="container">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-58">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                                <input class="text" type="text" id="fname" name="firstname" placeholder="Lushak">
+                                <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                                <input class="text" type="text" id="email" name="email" placeholder="dekalusha@gmail.com">
+                                <label for="adr"><i class="fa fa-address-caed-o"></i>Address</label>
+                                <input class="text" type="text" id="adr" name="address" placeholder="452 W. 15th Street">
+                                <label for="city"><i class="fa fa-institution"></i>City</label>
+                                <input class="text" type="text" id="city" name="city" placeholder="Phone Penh">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input class="text" type="text" id="state" name="state" placeholder="PP">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="state">Zip</label>
+                                        <input class="text" type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                                <div class="col-50">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing
+                                    </label>
+                                    <input type="submit" value="Continue To checkout" class="btn1">
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Card</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color: navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color: blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                                    <i class="fa fa-cc-discover" style="color: orange;"></i>
+                                </div>
+                                <labe for="cname">Name on Card</labe>
+                                <input class="text" type="text" id="cname" name="cardnumber" placeholder="Lushak">
+
+                                <labe for="ccnum">Credit Card</labe>
+                                <input class="text" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+                                <labe for="expmonth">Exp Month</labe>
+                                <input class="text" type="text" id="expmonth" name="expmonth" placeholder="September">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label>
+                                        <input class="text" type="text" id="expyear" name="expyear" placeholder="2018">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="expyear">CVV</label>
+                                        <input class="text" type="text" id="cvv" name="cvv" placeholder="532">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="col-25">
+                <div id="container" class="container">
+                    <h4>Card<span class="price" style="color: black"><i class="fa fa-shopping-cart"></i><b>4</b></span></h4>
+                    <p><a class="a" href="#">Shirts</a><span class="price">$1500</span></p>
+                    <p><a class="a" href="#">Shirts</a><span class="price">$1000</span></p>
+                    <p><a class="a" href="#">Shirts</a><span class="price">$500</span></p>
+                    <p><a class="a" href="#">Shirts</a><span class="price">$500</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color: black"><b>$3500</b></span></p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+    <p>&copy; Company 2017-2020</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

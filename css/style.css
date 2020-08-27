@@ -5,6 +5,7 @@ body {
 .navbar {
     background: blueviolet;
 }
+
   
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -18,25 +19,115 @@ body {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+    
 }
 .col-md-3, .col-md-6 {
-    margin: auto;
+    
     border: 1em solid wheat;
     border-radius: .5em;
-    background-color: steelblue;
+    
     
 }
 .jumbotron {
     text-align: center;
-    color:white;
-    background: #FFF url(../img/me.jpg) center center no-repeat;
+    color: black;
+    background:#FFF url(../img/me.jpg) center center no-repeat;
     background-size: cover;
   
+}
+.col-lg-4{
+    border-radius: 5px;
+}
+.container {
+    
+    padding: 3px 18px 13px 18px;
+    
+    border-radius: 3px;
 }
 img {
     max-width: 100%;
     height: auto;
 }
-#view {
-    background-color: tomato;
+
+h2 {
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.col-25{
+    -ms-flex: 25%;
+    flex: 25%;
+}
+.col-50{
+    -ms-flex: 50%;
+    flex: 50%;
+}
+.col-75{
+    -ms-flex: 75%;
+    flex: 75%;
+}
+.col-25, .col-50, .col-75 {
+    padding: 0 16px;
+}
+.text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+.btn1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn1:hover {
+    background-color: #4CAF50;
+}
+.a{
+    border: 1px solid lightgrey;
+}
+
+span.price{
+    float: right;
+    color: grey;
+}
+@media(max-width:768px){
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-25{
+        margin-bottom: 20px;
+    }
+}
+footer{
+    width: 100%;
+    background-color: lightblue;
+    height: 50px;
+    text-align: center;
+}
+#container {
+    background-color: #ccc;
 }
